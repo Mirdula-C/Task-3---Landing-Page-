@@ -75,13 +75,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     background-color: #fff;
 }
 
 .hero-content h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .hero-content span {
@@ -156,6 +156,19 @@ body {
     .login-signup {
         display: flex;
     }
+    .hero {
+        display: block; 
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px; 
+    }
+
+    .hero-image img {
+        width: 100%; 
+        max-width: 300px; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -169,11 +182,16 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 2rem; 
+    }
+
+    .hero-content p {
+        font-size: 1rem; 
     }
 
     .hero-image img {
-        width: 100%;
+        width: 100%; 
+        max-width: 250px; 
     }
 }
 
@@ -685,15 +703,52 @@ body {
             }
         }
     }
+}
     @media (max-width: 768px) {
+        .tree-image {
+            position: static; 
+            margin: 20px auto; 
+            display: block; 
+            width: 100px; 
+        }
+    
+        
+        .best-vacation-plan {
+            padding: 30px 15px; 
+        }
+    
         .vacation-cards {
             flex-direction: column; 
+            gap: 20px; 
         }
     
         .vacation-card {
             width: 100%; 
-            margin-bottom: 15px; 
+            margin-bottom: 15px;
         }
+    
+        
+        .arrow-container-4 {
+            display: none;
+        }
+    }
+    
+@media (max-width: 480px) {
+    .best-vacation-plan .section-heading {
+        font-size: 28px; 
+    }
+
+    .best-vacation-plan .section-subheading {
+        font-size: 14px; 
+    }
+
+    .vacation-card {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .tree-image {
+        width: 80px; 
     }
 }
     
